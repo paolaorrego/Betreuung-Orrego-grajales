@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orrego Grajales | Betreuung & Unterstützung</title>
+<meta name="description" content="Persönliche Betreuung und Unterstützung im Alltag in Hamburg und Umgebung. Mit Herz, Respekt und Zuverlässigkeit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#173d35; --green2:#28594d; --cream:#f8f5ee;
+  --gold:#c59b58; --gold2:#e2c58f; --white:#fff; --text:#26312e;
+  --muted:#6d7773; --shadow:0 18px 50px rgba(23,61,53,.10);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:20;background:rgba(23,61,53,.96);backdrop-filter:blur(10px);color:#fff}
+.navin{min-height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.2px}
+.mark{width:42px;height:42px;border:1px solid rgba(255,255,255,.45);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-family:"Playfair Display",serif;font-size:19px}
+.links{display:flex;gap:28px;font-size:14px}
+.links a{opacity:.9}.links a:hover{color:var(--gold2)}
+.navbtn{background:var(--gold);padding:10px 17px;border-radius:30px;font-weight:700;font-size:13px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:
+radial-gradient(circle at 15% 20%,rgba(197,155,88,.18),transparent 30%),
+linear-gradient(135deg,#173d35 0%,#245447 58%,#315f53 100%);color:#fff}
+.hero:after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border:1px solid rgba(226,197,143,.28);border-radius:50%}
+.hero .container{min-height:650px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;padding:75px 0}
+.eyebrow{color:var(--gold2);font-size:13px;text-transform:uppercase;letter-spacing:3px;font-weight:700}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif}
+h1{font-size:clamp(46px,6vw,78px);line-height:1.02;margin:16px 0 22px;font-weight:600}
+.hero p{font-size:19px;max-width:650px;color:rgba(255,255,255,.84)}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 23px;border-radius:8px;font-weight:700}
+.btn.gold{background:var(--gold);color:#fff;box-shadow:0 10px 25px rgba(0,0,0,.16)}
+.btn.light{border:1px solid rgba(255,255,255,.35);color:#fff}
+.hero-card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);padding:32px;border-radius:22px;backdrop-filter:blur(10px);box-shadow:var(--shadow)}
+.hero-card .quote{font-family:"Playfair Display",serif;font-size:30px;line-height:1.25}
+.hero-card .line{height:1px;background:rgba(255,255,255,.18);margin:25px 0}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.trust div{font-size:13px;color:rgba(255,255,255,.78)}
+.trust strong{display:block;color:#fff;font-size:15px}
+
+/* GENERAL */
+section{padding:88px 0}
+.kicker{text-align:center;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+h2{text-align:center;font-size:43px;line-height:1.1;color:var(--green);margin:10px 0 16px}
+.intro{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 45px}
+
+/* SERVICES */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #eee8dc;border-radius:18px;padding:30px;box-shadow:var(--shadow);transition:.25s}
+.card:hover{transform:translateY(-5px)}
+.icon{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#f2eadb;color:var(--green);font-size:22px;margin-bottom:20px}
+.card h3{font-size:23px;color:var(--green);margin:0 0 10px}
+.card p{color:var(--muted);font-size:14px}
+
+/* ABOUT */
+.about{background:#fff}
+.aboutgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.photo{min-height:430px;border-radius:28px;background:
+linear-gradient(145deg,rgba(23,61,53,.08),rgba(197,155,88,.20)),
+radial-gradient(circle at 50% 35%,#e7d9bd 0 12%,transparent 13%),
+linear-gradient(160deg,#dce7df,#f7efe2);
+position:relative;overflow:hidden}
+.photo:before{content:"ORREGO";position:absolute;left:25px;bottom:20px;color:rgba(23,61,53,.15);font-size:68px;font-family:"Playfair Display",serif;font-weight:700}
+.aboutcopy h2{text-align:left}.aboutcopy p{color:var(--muted)}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
+.point{font-size:14px;font-weight:600;color:var(--green)}
+.point span{color:var(--gold);margin-right:7px}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{text-align:center;padding:25px}.num{margin:auto;width:46px;height:46px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:700}.step h3{color:var(--green);font-size:22px}
+
+/* CTA */
+.cta{padding:0 0 88px}.ctabox{background:var(--green);color:#fff;border-radius:25px;padding:55px 65px;display:flex;justify-content:space-between;align-items:center;gap:30px;overflow:hidden}
+.ctabox h2{color:#fff;text-align:left;margin:0 0 10px}.ctabox p{color:rgba(255,255,255,.75);margin:0}
+.contactbtn{white-space:nowrap}
+
+/* FOOTER */
+footer{background:#102923;color:#d8dfdc;padding:35px 0}
+.footerin{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+footer strong{color:#fff}.small{font-size:13px;color:#aab6b1}
+
+/* MOBILE */
+@media(max-width:900px){
+ .hero .container,.aboutgrid{grid-template-columns:1fr}
+ .hero .container{min-height:auto;padding:65px 0}
+ .cards{grid-template-columns:1fr 1fr}
+ .photo{min-height:300px}
+ .ctabox{flex-direction:column;align-items:flex-start;padding:40px}
+}
+@media(max-width:600px){
+ .links{display:none}.navin{min-height:66px}
+ h1{font-size:46px}.hero p{font-size:17px}
+ section{padding:65px 0}.cards,.steps{grid-template-columns:1fr}
+ h2{font-size:35px}.points{grid-template-columns:1fr}
+ .hero-card{padding:25px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="container navin">
+<a class="brand" href="#">
+<span class="mark">OG</span>
+<span>Orrego Grajales</span>
+</a>
+<div class="links">
+<a href="#leistungen">Leistungen</a>
+<a href="#ueber-uns">Über uns</a>
+<a href="#ablauf">Ablauf</a>
+<a href="#kontakt">Kontakt</a>
+</div>
+<a class="navbtn" href="#kontakt">Anfrage</a>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container">
+<div>
+<div class="eyebrow">Betreuung • Vertrauen • Menschlichkeit</div>
+<h1>Mit Herz für Ihren Alltag.</h1>
+<p>Persönliche Betreuung und Unterstützung im Alltag – aufmerksam, respektvoll und zuverlässig. Damit Sie sich im täglichen Leben gut begleitet fühlen.</p>
+<div class="actions">
+<a class="btn gold" href="#kontakt">Kontakt aufnehmen</a>
+<a class="btn light" href="#leistungen">Leistungen entdecken</a>
+</div>
+</div>
+<div class="hero-card">
+<div class="quote">„Gute Betreuung bedeutet nicht nur Hilfe – sondern Zeit, Respekt und ein offenes Ohr.“</div>
+<div class="line"></div>
+<div class="trust">
+<div><strong>Persönlich</strong>Individuell abgestimmte Unterstützung</div>
+<div><strong>Zuverlässig</strong>Verbindlich und verantwortungsvoll</div>
+<div><strong>Respektvoll</strong>Der Mensch steht im Mittelpunkt</div>
+<div><strong>Herzlich</strong>Mit Aufmerksamkeit und Verständnis</div>
+</div>
+</div>
+</div>
+</header>
+
+<section id="leistungen">
+<div class="container">
+<div class="kicker">Was wir anbieten</div>
+<h2>Unterstützung, die zu Ihnen passt</h2>
+<p class="intro">Wir begleiten Menschen im Alltag mit Ruhe, Respekt und persönlicher Aufmerksamkeit. Die Unterstützung richtet sich nach den individuellen Bedürfnissen.</p>
+<div class="cards">
+<div class="card"><div class="icon">♡</div><h3>Alltagsbegleitung</h3><p>Persönliche Begleitung und Unterstützung bei alltäglichen Aktivitäten – individuell und einfühlsam.</p></div>
+<div class="card"><div class="icon">⌂</div><h3>Unterstützung</h3><p>Praktische Hilfe im Alltag und eine zuverlässige Begleitung, wenn Unterstützung gebraucht wird.</p></div>
+<div class="card"><div class="icon">○</div><h3>Begleitung außer Haus</h3><p>Begleitung zu Terminen, beim Einkaufen oder bei wichtigen Wegen außerhalb des Hauses.</p></div>
+<div class="card"><div class="icon">✦</div><h3>Persönliche Betreuung</h3><p>Zeit, Aufmerksamkeit und ein offenes Ohr – mit dem Menschen und seinen Wünschen im Mittelpunkt.</p></div>
+</div>
+</div>
+</section>
+
+<section class="about" id="ueber-uns">
+<div class="container aboutgrid">
+<div class="photo"></div>
+<div class="aboutcopy">
+<div class="kicker" style="text-align:left">Über uns</div>
+<h2>Vertrauen beginnt mit Menschlichkeit.</h2>
+<p>Eine gute Betreuung ist mehr als reine Unterstützung. Sie bedeutet, zuzuhören, da zu sein und den Alltag gemeinsam leichter zu machen.</p>
+<p>Wir legen großen Wert auf einen respektvollen Umgang, Zuverlässigkeit und eine persönliche Betreuung, bei der sich jeder Mensch gesehen und ernst genommen fühlt.</p>
+<div class="points">
+<div class="point"><span>✓</span>Persönliche Betreuung</div>
+<div class="point"><span>✓</span>Zuverlässige Unterstützung</div>
+<div class="point"><span>✓</span>Respektvoller Umgang</div>
+<div class="point"><span>✓</span>Individuelle Bedürfnisse</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ablauf">
+<div class="container">
+<div class="kicker">So funktioniert es</div>
+<h2>Einfach und persönlich</h2>
+<p class="intro">Von der ersten Anfrage bis zur Betreuung – unkompliziert und mit einem offenen Ohr für Ihre Wünsche.</p>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Kontakt</h3><p>Sie schreiben uns oder nehmen telefonisch Kontakt auf und erzählen uns kurz, wobei Sie Unterstützung benötigen.</p></div>
+<div class="step"><div class="num">2</div><h3>Gespräch</h3><p>Wir besprechen gemeinsam Ihre Wünsche, den Bedarf und die passende Form der Unterstützung.</p></div>
+<div class="step"><div class="num">3</div><h3>Begleitung</h3><p>Wir vereinbaren die Betreuung und begleiten Sie zuverlässig und persönlich im Alltag.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta" id="kontakt">
+<div class="container">
+<div class="ctabox">
+<div>
+<h2>Sie möchten mehr erfahren?</h2>
+<p>Wir freuen uns auf Ihre Anfrage und auf ein persönliches Gespräch.</p>
+</div>
+<a class="btn gold contactbtn" href="mailto:paola.grajales@web.de">E-Mail schreiben</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container footerin">
+<div><strong>Orrego Grajales</strong><br><span class="small">Betreuung & Unterstützung im Alltag</span></div>
+<div class="small">Hamburg und Umgebung<br>paola.grajales@web.de</div>
+<div class="small">© 2026 Orrego Grajales</div>
+</div>
+</footer>
+
+</body>
+</html>
